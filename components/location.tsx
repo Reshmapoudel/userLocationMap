@@ -40,7 +40,9 @@ const Location = (props) => {
                         >
                           DELETE
                         </button>
-                        <button type="button">Edit</button>
+                        <button type="button" className={styles.edit}>
+                          Edit
+                        </button>
                       </div>
                     </Popup>
                   </Marker>

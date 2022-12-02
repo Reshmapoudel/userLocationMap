@@ -134,7 +134,18 @@
   align-items: center;
 }
 .delete{
-  
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 8px;
+}
+.edit {
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 8px;
 }
 @media (max-width: 600px) {
   .grid {
