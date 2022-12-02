@@ -26,8 +26,19 @@ const Location = (props) => {
               {data.map((item) => {
                 return (
                   <Marker position={[item.value.lat, item.value.lng]}>
-                    <Popup>
-                      {item.value.name} {item.value.type}
+                    <Popup className={styles.popupContainer}>
+                      <h5 className={styles.popuptitle}>Location Details</h5>
+
+                      <p>
+                        {" "}
+                        {item.value.name} {item.value.type}
+                      </p>
+                      <div className={styles.btnSection}>
+                        <button onClick={() => deleteLocation(item)}>
+                          DELETE
+                        </button>
+                        <button type="button">Edit</button>
+                      </div>
                     </Popup>
                   </Marker>
                 );
