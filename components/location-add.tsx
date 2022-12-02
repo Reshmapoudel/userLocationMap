@@ -16,8 +16,8 @@ const LocationAdd: FC<addlocationProps> = ({ addLocation }) => {
 
   const [draggable, setDraggable] = useState<boolean>(true);
   const [position, setPosition] = useState<LatLong>({
-    lat: 26.6490832,
-    lng: 80.5075756,
+    lat: 38.907132,
+    lng: -77.036546,
   });
 
   const markerRef = useRef(null);
@@ -69,11 +69,7 @@ const LocationAdd: FC<addlocationProps> = ({ addLocation }) => {
             <div className={styles.name}>
               <div className={styles.label}>Location on map:</div>
               <div className={styles.map}>
-                <Map
-                  className={style.homeMap}
-                  center={DEFAULT_CENTER}
-                  zoom={12}
-                >
+                <Map className={style.homeMap} center={DEFAULT_CENTER} zoom={4}>
                   {({ TileLayer, Marker, Popup }) => (
                     <>
                       <TileLayer

@@ -34,7 +34,10 @@ const Location = (props) => {
                         {item.value.name} {item.value.type}
                       </p>
                       <div className={styles.btnSection}>
-                        <button onClick={() => deleteLocation(item)}>
+                        <button
+                          onClick={() => deleteLocation(item)}
+                          className={styles.delete}
+                        >
                           DELETE
                         </button>
                         <button type="button">Edit</button>

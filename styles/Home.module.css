@@ -133,7 +133,9 @@
   gap: .25rem;
   align-items: center;
 }
-
+.delete{
+  
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
