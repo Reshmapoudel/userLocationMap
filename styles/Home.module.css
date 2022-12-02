@@ -134,14 +134,14 @@
   align-items: center;
 }
 .delete{
-  background-color: red;
+  background-color: "#edad52";
   color: white;
   font-weight: 700;
   border-radius: 8px;
   padding: 8px;
 }
 .edit {
-  background-color: blue;
+  background-color: "#5dbfde";
   color: white;
   font-weight: 700;
   border-radius: 8px;
